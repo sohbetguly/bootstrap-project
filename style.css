@@ -1,0 +1,12 @@
+.icon-container {
+  background-color: #F8F9FA;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+
+}
+.icon-container i {
+  font-size: 8rem;
+  color: #4d4d4d;
+}
