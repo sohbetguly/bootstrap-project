@@ -1,5 +1,9 @@
-.icon-container {
+.container-xl {
   background-color: #f8f9fa;
+}
+
+.icon-container {
+  background-color: #ececec;
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -11,4 +15,23 @@
 .icon-container i {
   font-size: 5rem;
   color: #4d4d4d;
+}
+
+.accordion-header button {
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq > div {
+  max-width: 700px;
+  width: 100%;
 }
