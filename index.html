@@ -9,13 +9,97 @@
     <link rel="stylesheet" href="bootstrap/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="bootstrap/bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .container-xxl {
+        background-color: #f8f9fa;
+      }
+
+      .icon-container {
+        background-color: #ececec;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icon-container i {
+        font-size: 5rem;
+        color: #4d4d4d;
+      }
+
+      .accordion-header button {
+        font-weight: bold;
+      }
+      .accordion-button:not(.collapsed) {
+        color: black;
+      }
+
+      .faq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .faq > div {
+        max-width: 700px;
+        width: 100%;
+      }
+
+      .very-bold {
+        color: black;
+        text-shadow: 1px 0 black;
+        letter-spacing: -3px;
+        font-weight: 900;
+      }
+
+      .first-section,
+      .second-section {
+        height: 100vh;
+        max-height: 750px;
+      }
+
+      .first-img {
+        max-width: 250px;
+      }
+
+      @media (max-width: 768px) {
+        .first-section {
+          max-height: 800px;
+          height: 100vh;
+        }
+        .second-section {
+          max-height: 1500px;
+          height: auto;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container-xxl">
-      <section class="row" style="height: 100vh">
+      <section class="row first-section">
         <div
-          class="col-6 d-flex px-3 justify-content-center align-items-center"
+          class="col-12 col-sm-6 order-1 order-sm-0 px-4 d-flex justify-content-center align-items-center"
         >
           <div style="max-width: 400px">
             <span
@@ -23,7 +107,7 @@
               class="border border-1 border-dark px-3 py-1 rounded-4 fw-bold text-uppercase"
               >exclusive savings</span
             >
-            <h1 class="lh-1 text-uppercase fw-bold display-5 my-3">
+            <h1 class="very-bold lh-1 text-uppercase fw-bold display-5 my-3">
               Create your own power bundle
             </h1>
             <p>
@@ -36,19 +120,21 @@
             </button>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center">
+        <div
+          class="col-12 col-sm-6 d-flex justify-content-center align-items-center px-4"
+        >
           <img
-            style="max-width: 250px; height: auto"
+            class="img-fluid first-img"
             src="images/1.jpg"
             alt="exclusive savings"
           />
         </div>
       </section>
-      <section class="row">
+      <section class="row second-section">
         <div
-          class="col-4 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-md-4 d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <img
               style="max-width: 150px"
               class="img-fluid mb-2"
@@ -69,9 +155,9 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-md-4 d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <img
               style="max-width: 150px"
               class="img-fluid mb-2"
@@ -92,9 +178,9 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-md-4 d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <img
               style="max-width: 150px"
               class="img-fluid mb-2"
@@ -123,19 +209,19 @@
           </div>
         </div>
       </section>
-      <section class="row align-content-center" style="height: 100vh">
+      <section class="row align-content-center py-5">
         <div>
           <h1
             style="max-width: 500px"
-            class="text-center mx-auto display-5 text-center text-uppercase fw-bold mb-5 pb-4"
+            class="very-bold text-center mx-auto display-5 text-center text-uppercase fw-bold mb-5 pb-4"
           >
             How doctors are using calecim
           </h1>
         </div>
         <div
-          class="col-3 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-sm-6 col-lg-3 py-3  d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <div class="icon-container">
               <i class="bi bi-bank2"></i>
             </div>
@@ -153,9 +239,9 @@
           </div>
         </div>
         <div
-          class="col-3 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-sm-6 col-lg-3 py-3  d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <div class="icon-container">
               <i class="bi bi-bicycle"></i>
             </div>
@@ -172,9 +258,9 @@
           </div>
         </div>
         <div
-          class="col-3 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-sm-6 col-lg-3 py-3  d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <div class="icon-container">
               <i class="bi bi-apple"></i>
             </div>
@@ -191,9 +277,9 @@
           </div>
         </div>
         <div
-          class="col-3 d-flex px-3 justify-content-center align-items-center text-center"
+          class="col-12 col-sm-6 col-lg-3 py-3  d-flex px-3 justify-content-center align-items-center text-center"
         >
-          <div style="max-width: 400px; height: 500px">
+          <div class="py-4">
             <div class="icon-container">
               <i class="bi bi-person-circle"></i>
             </div>
@@ -213,7 +299,7 @@
       <section class="py-5 faq">
         <div class="pb-5">
           <div class="text-center my-5">
-            <h1>Got Questions? We've Got Answers</h1>
+            <h1 class="fw-bold">Got Questions? We've Got Answers</h1>
             <p class="my-3 fs-5">Navigate Through Our Platform With Ease</p>
           </div>
 
